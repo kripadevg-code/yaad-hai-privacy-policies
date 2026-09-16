@@ -5,7 +5,7 @@
 **App Name:** YaadHai  
 **Package Name:** com.yaadhai  
 **Developer / Data Controller:** YaadHai Team  
-**Contact:** [ayushishikshaofficial@gmail.com]
+**Contact:** ayushishikshaofficial@gmail.com
 
 ---
 
@@ -70,20 +70,19 @@ The majority of your data — subjects, chapters, concepts, flashcards, quizzes,
 
 We use **Supabase** for:
 - **Authentication** — Your Google account credentials are managed by Supabase Auth. We store your user ID, email, display name, and avatar URL securely on Supabase servers.
-- **AI Processing (Edge Functions)** — When you scan material, your text or image data is sent to Supabase Edge Functions (hosted in the region you connect to). These functions call **Google Gemini** on your behalf. **Your Gemini API key is stored as a server-side secret and is never exposed to the App.**
+- **AI Processing (Edge Functions)** — When you scan material, your text or image data is sent to Supabase Edge Functions. These functions call **Google Gemini** on your behalf. Your Gemini API key is stored as a server-side secret and is never exposed to the App.
 
 ### 4.3 Security Measures
 
 - All data transmission uses **HTTPS / TLS encryption**
 - Supabase uses **Row Level Security (RLS)** — your data is only accessible by you
-- The Supabase `anon` key included in the App is public by design and is protected by RLS policies
 - We do not store raw images on our servers
 
 ---
 
 ## 5. Third-Party Services
 
-YaadHai integrates the following third-party services. Please review their respective privacy policies:
+YaadHai integrates the following third-party services:
 
 | Service | Purpose | Privacy Policy |
 |---|---|---|
@@ -92,53 +91,31 @@ YaadHai integrates the following third-party services. Please review their respe
 | **Google Gemini (via Edge Functions)** | AI Study Pack Generation | [ai.google.dev/terms](https://ai.google.dev/terms) |
 | **Google ML Kit** | On-device OCR (Text Recognition) | [developers.google.com/ml-kit](https://developers.google.com/ml-kit) |
 
-> **Important:** The Gemini API is called **server-side only** via Supabase Edge Functions. Your Gemini API key is never bundled in or transmitted by the App.
-
 ---
 
 ## 6. Data Sharing
 
 We do **not** sell, rent, or trade your personal information to third parties.
 
-We may share data only in the following circumstances:
-
-- **Service Providers:** With Supabase and Google (as listed above) to operate core functionality
-- **Legal Obligations:** If required by law, regulation, or valid legal process
-- **Business Transfer:** In the event of a merger or acquisition, your data may be transferred (you will be notified)
-- **With Your Consent:** For any other purpose not listed here, only with your explicit consent
-
 ---
 
 ## 7. Children's Privacy
 
-YaadHai is intended for users aged **13 and above** (or the applicable minimum digital age in your country). We do not knowingly collect personal data from children under 13. If you believe a child under 13 has provided us with personal data, please contact us immediately and we will delete that data.
+YaadHai is intended for users aged **13 and above**. We do not knowingly collect personal data from children under 13.
 
 ---
 
-## 8. Your Rights and Choices
+## 8. Account & Data Deletion (Google Play Compliance)
 
-Depending on your location, you may have the following rights:
+Users have the right to request deletion of their account and associated authentication data at any time:
 
-### 8.1 Access & Portability
-You can export your study packs as PDFs directly from the App at any time.
+### How to Request Account Deletion:
+1. Send an email to **ayushishikshaofficial@gmail.com** with the subject: `Account Deletion Request - YaadHai`.
+2. Please send the request from the same Google email address used to sign in to the app.
 
-### 8.2 Deletion
-You can delete individual subjects, chapters, flashcards, and quizzes from within the App. To delete your entire account and all associated cloud data (Supabase auth records), contact us at [your-support-email@yaadhai.com].
-
-### 8.3 Opt-Out of Analytics
-Where applicable, you may opt out of anonymous analytics via your device's privacy settings or by contacting us.
-
-### 8.4 Withdrawal of Consent
-You may revoke camera/gallery permissions at any time through your device's **Settings → Apps → YaadHai → Permissions**.
-
-### 8.5 GDPR / CCPA Rights
-If you are in the EU or California, you additionally have the right to:
-- Request a copy of your personal data
-- Request correction of inaccurate data
-- Object to or restrict certain processing
-- Lodge a complaint with a supervisory authority
-
-To exercise any of these rights, contact us at [your-support-email@yaadhai.com].
+### Data Deleted:
+- **Authentication Records:** Your user profile, email address, and authentication record in Supabase Auth will be permanently deleted within **7 business days**.
+- **On-Device Data:** All study notes, flashcards, and quizzes are stored locally on your device and will be deleted immediately upon clearing app data or uninstalling the app.
 
 ---
 
@@ -148,8 +125,8 @@ To exercise any of these rights, contact us at [your-support-email@yaadhai.com].
 |---|---|
 | Local learning data (flashcards, concepts, etc.) | Until you delete it from the App or uninstall |
 | Supabase auth records (email, user ID) | Until you request account deletion |
-| Images sent for AI processing | Deleted immediately after processing (not persisted on server) |
-| Anonymous analytics | Aggregated; retained for up to 12 months |
+| Images sent for AI processing | Deleted immediately after processing |
+| Anonymous analytics | Retained for up to 12 months |
 
 ---
 
@@ -160,32 +137,13 @@ To exercise any of these rights, contact us at [your-support-email@yaadhai.com].
 | `CAMERA` | Scan physical study material with your camera |
 | `READ_EXTERNAL_STORAGE` / `READ_MEDIA_IMAGES` | Select images from your gallery to scan |
 | `INTERNET` | Authenticate with Supabase; send content to AI Edge Functions |
-| `WRITE_EXTERNAL_STORAGE` (Android < 10) | Save exported PDF study packs to your device |
 
 ---
 
-## 11. Cookies and Tracking
+## 11. Contact Us
 
-YaadHai is a **mobile application** and does not use browser cookies. Supabase Auth uses secure, server-managed session tokens to keep you signed in.
-
----
-
-## 12. Changes to This Privacy Policy
-
-We may update this Privacy Policy from time to time. When we make significant changes, we will:
-
-1. Update the **"Last Updated"** date at the top of this document
-2. Notify you via an in-app notification or email (where applicable)
-
-Your continued use of the App after changes are posted constitutes acceptance of the updated policy.
-
----
-
-## 13. Contact Us
-
-If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us:
+If you have any questions, concerns, or requests regarding this Privacy Policy:
 
 **YaadHai Support**  
-📧 Email: [ayushishikshaofficial@gmail.com]  
-🌐 Website: [www.youtube.com@Ayushi-shiksha]  
- 
+📧 Email: **ayushishikshaofficial@gmail.com**  
+🌐 Channel: **https://www.youtube.com/@Ayushi-shiksha**  
